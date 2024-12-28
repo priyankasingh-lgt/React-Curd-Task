@@ -1,0 +1,314 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f0f4f8, #d9e8fc);
+  color: #333;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-bar,
+.dropdown {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus,
+.dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.search-bar::placeholder {
+  color: #999;
+}
+
+.home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.home button:hover {
+  background: linear-gradient(to right, #0056b3, #003d7d);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.employee-list {
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 90%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.employee-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  text-align: center;
+  font-size: 1rem;
+}
+
+table th {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f5ff;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(to right, #0056b3, #003d7d);
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #e20f0f, #a40c0c);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(to right, #c30b0b, #900909);
+  transform: scale(1.05);
+}
+
+.back-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.back-btn:hover {
+  background: linear-gradient(to right, #0056b3, #003d7d);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.employee-form,
+.edit-employee-form {
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 80%;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.employee-form h1,
+.edit-employee-form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #007bff;
+}
+
+.employee-form input,
+.employee-form select,
+.employee-form button,
+.edit-employee-form input,
+.edit-employee-form select,
+.edit-employee-form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.employee-form input:focus,
+.employee-form select:focus,
+.edit-employee-form input:focus,
+.edit-employee-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.employee-form button,
+.edit-employee-form button {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.employee-form button:hover,
+.edit-employee-form button:hover {
+  background: linear-gradient(to right, #0056b3, #003d7d);
+  transform: translateY(-3px);
+}
+
+.employee-form button[type="button"],
+.edit-employee-form button[type="button"] {
+  background: linear-gradient(to right, #dc3545, #c82333);
+}
+
+.employee-form button[type="button"]:hover,
+.edit-employee-form button[type="button"]:hover {
+  background: linear-gradient(to right, #c82333, #a71d2a);
+  transform: scale(1.05);
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.prev-next-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+  border: none;
+}
+
+.prev-next-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.prev-next-btn:disabled {
+  background-color: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-btn {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  color: #333;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.page-btn.active {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  border: 1px solid #007bff;
+}
+
+.page-btn:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-direction: column;
+  }
+
+  .page-btn {
+    padding: 8px 12px;
+  }
+
+  .prev-next-btn {
+    padding: 8px 16px;
+  }
+}
+
